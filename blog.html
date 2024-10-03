@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="shortcut icon" href="assets/blog.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f4d12110de.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F9F7F3',
+                        'button-color': '#B4F461',
+                        'text-primary': '#111111',
+                        'text-secondary': 'rgba(17, 17, 17, 0.7)',
+                        'button-border-color': 'rgba(17, 17, 17, 0.3)',
+                        'card-border-color': 'rgba(17, 17, 17, 0.1)',
+                        'card-balance-bg-color': 'rgba(17, 17, 17, 0.05)',
+                    },
+                    fontFamily: {
+                        lexend: ["Lexend", 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50">
+        <!-- Navbar Section Start -->
+        <nav class="bg-primary-color">
+
+            <div class="w-4/5 mx-auto flex py-1 lg:py-5 flex-col lg:flex-row justify-around items-center">
+
+                <!-- Home Button And Logo Container -->
+                <div class="w-full lg:w-[62%] flex justify-between">
+                    <!-- Home Button -->
+                    <div id="blog-button" class="order-2 lg:order-1 mt-5 lg:mt-0 mb-5 lg:mb-0">
+                        <a href="index.html"><button class="btn hover:bg-button-color bg-button-color px-6 text-lg font-semibold text-text-primary">Home</button></a>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="flex order-1 lg:order-2 gap-4 items-center">
+                        <img src="assets/logo.png">
+                        <a href="index.html"
+                            class="text-text-primary leading-5 lg:leading-none font-semibold text-[19px] lg:text-xl">
+                            Donate Bangladesh</a>
+                    </div>
+                </div>
+
+                <!-- Account Balance -->
+                <div
+                    class="w-full lg:w-[38%] pt-2 lg:pt-0 pb-3 lg:pb-0 flex justify-center lg:justify-end gap-3 order-3 lg:order-3 items-center">
+                    <img src="assets/coin.png">
+                    <h1 class="text-text-secondary font-medium text-xl"><span>48600</span> BDT</h1>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar Section End -->
+    </header>
+
+    <div class="font-lexend w-4/5 mx-auto py-10">
+        <h1 class="font-bold text-4xl text-text-primary">Important FAQ <i class="fa-regular fa-circle-question mb-8"></i></h1>
+
+    <div class="space-y-3">
+        <!-- First Question & Ans -->
+        <div class="collapse bg-base-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p class="text-text-secondary">Document Object Model (DOM) is a programming interface that allows JavaScript to manipulate each element of HTML. DOM represents each element of HTML in a tree-like model.</p>
+            </div>
+          </div>
+
+          <!-- Second Question & Ans -->
+          <div class="collapse bg-base-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Click me to show/hide content</div>
+            <div class="collapse-content">
+              <p class="text-text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quod ex omnis dolorem ratione a obcaecati corrupti enim. Deleniti cumque unde debitis molestiae beatae, consectetur distinctio sapiente a amet saepe.</p>
+            </div>
+          </div>
+
+          <!-- Third Question & Ans -->
+          <div class="collapse bg-base-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Click me to show/hide content</div>
+            <div class="collapse-content">
+              <p class="text-text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, a? Aut deleniti deserunt voluptas officiis magni dolore! Laborum animi consequuntur accusantium accusamus, ut ipsum soluta, labore dolore facilis velit quasi.</p>
+            </div>
+          </div>
+
+          <!-- Fourth Question & Ans -->
+          <div class="collapse bg-base-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Click me to show/hide content</div>
+            <div class="collapse-content">
+              <p class="text-text-secondary">hello</p>
+            </div>
+          </div>
+    </div>
+    </div>
+    <script src="./Js/blog.js"></script>
 </body>
+
 </html>
