@@ -55,4 +55,5 @@ document.getElementById('donate-now-button')
         const audio = new Audio('./assets/audio.mp3');
         audio.play();
 
+        document.getElementById('card-input-field').value = '';
     })
