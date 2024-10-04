@@ -51,6 +51,8 @@ document.getElementById('donate-now-button')
         historyPage.insertBefore(notificationDiv, historyPage.firstChild);
         addHiddenClass('empty-history');
 
-        
+        my_modal_5.showModal();
+        const audio = new Audio('./assets/audio.mp3');
+        audio.play();
 
     })
