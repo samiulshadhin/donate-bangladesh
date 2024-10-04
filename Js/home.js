@@ -101,7 +101,6 @@ document.getElementById('donate-now-button2')
     })
 
 
-
 // Set addEventListener on Card-03 Donate Now button
 document.getElementById('donate-now-button3')
     .addEventListener('click', function () {

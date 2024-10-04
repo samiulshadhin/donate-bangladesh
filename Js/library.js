@@ -21,5 +21,3 @@ function addHiddenClass(id) {
     const addHidden = document.getElementById(id);
     return addHidden.classList.add('hidden');
 }
-
-

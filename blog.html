@@ -80,7 +80,7 @@
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-              <p class="text-text-secondary">Document Object Model (DOM) is a programming interface that allows JavaScript to manipulate each element of HTML. DOM represents each element of HTML in a tree-like model.</p>
+              <p class="text-text-secondary">Document Object Model (DOM) is a programming interface that allows JavaScript to manipulate each element of HTML. DOM represents each element of HTML in a tree-like model. In essence, DOM mediates between HTML and JavaScript.</p>
             </div>
           </div>
 
@@ -89,7 +89,7 @@
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-              <p class="text-text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quod ex omnis dolorem ratione a obcaecati corrupti enim. Deleniti cumque unde debitis molestiae beatae, consectetur distinctio sapiente a amet saepe.</p>
+              <p class="text-text-secondary">There are usually 5 steps to select elements from DOM. These are getElementById(), getElementsByClassName(), querySelector(), querySelectorAll(), getElementsByTagName(). But generally, there are two processes to select a single element, one is getElementById(), and the other is querySelector(). To select multiple elements use querySelectorAll(), getElementsByTagName(), and getElementsByClassName(), they return more than one value.</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p class="text-text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, a? Aut deleniti deserunt voluptas officiis magni dolore! Laborum animi consequuntur accusantium accusamus, ut ipsum soluta, labore dolore facilis velit quasi.</p>
+              <p class="text-text-secondary">Through Event Delegation process we can reduce the event handler repetition and thus the code is reduced a lot. suppose we have to add event handler in a place where there are many children inside a parent and we want to add one event handler for each child. In that case, we in each child Instead of adding an event handler individually, we can complete the process by adding an event handler to their parent. By doing this, if we add a new child inside the parent, then the newly added child will also be added to the event handler of the parent.</p>
             </div>
           </div>
 
@@ -107,14 +107,17 @@
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p class="text-text-secondary">hello</p>
+              <p class="text-text-secondary">To manipulate an element using DOM, first select that element, so we can select that element using any selector. Then style property is used for styling and style can be set like CSS using style property. It is shown below: <br>
+                const element = Document.getElementById('element'); <br>
+                element.style.backgroundColor = 'red';<br>
+                Also, using dom, we can easily set an attribute, remove an attribute, and change the value of an attribute. For these we can use setAttribute(), removeAttribute(), and many more properties.
+              </p>
             </div>
           </div>
     </div>
     </div>
     <script src="./Js/library.js"></script>
     <script src="./Js/home.js"></script>
-    <script src="./Js/blog.js"></script>
 </body>
 
 </html>
